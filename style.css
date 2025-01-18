@@ -334,3 +334,105 @@ body{
         /* background-color: red; */
     }
 }
+.container-3{
+    height: 100vh;
+    width: 100%;
+    /* background-color: burlywood; */
+}
+.exp-heading{
+    /* background-color: white; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tech-container{
+    height: calc(100vh-100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.tech{
+    /* background-color: red; */
+    border: 2px solid #D1D1D1;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 400px;
+    width: 40%;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.tech img{
+    height: 35px;
+    width: 35px;
+}
+.title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.section-2{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.section-3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.section-4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.subsection{
+    /* border: 3px solid black; */
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.check{
+    height: 100%;
+    width: max-content;
+    /* border: 1px solid red; */
+    margin-right: 20px;
+}
+.text{
+    height: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+}
