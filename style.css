@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     font-family: "Poppins", serif;
     font-style:normal;
@@ -544,5 +548,107 @@ body{
     }
     .project{
         width: 80%;
+    }
+}
+.container-5{
+    height: calc(100vh - 200px);    
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-container{
+    background-color: #fff;
+    height: 100px;
+    width: 480px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #A3A3A3;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.contact-container img {
+    height: 40px;
+    width: 40px;
+}
+.email ,.linkedin{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.email a,.linkedin a{
+    color: black;
+    font-size: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 300ms ease, text-decoration 300ms ease;
+    text-underline-offset: 10px;
+    text-decoration-color: white;
+}
+.email a:hover,.linkedin a:hover{
+    color: #808080;
+    text-decoration: underline;
+}
+footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: burlywood; */
+}
+footer p{
+    font-size: 16px; 
+    font-weight: 400; 
+    color:rgb(85, 85, 85);
+}
+.foot-items {
+    /* background-color: red; */
+    height: max-content;
+    width: max-content;
+    position: relative;
+    top: -3px;
+    /* display: none; */
+}
+.foot-items ul{
+    display: flex;
+    list-style-type: none;
+}
+.foot-items li{
+    margin-right: 25px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.foot-items a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    transition: color 300ms ease, text-decoration 300ms ease;
+    text-underline-offset: 10px;
+}
+.foot-items a:hover{
+    color: #808080;
+    text-decoration: underline;
+}
+@media(max-width: 600px){
+    .foot-items ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .foot-items li{
+        font-size: 16px;
+    }
+    .contact-container{
+        width: 400px;
     }
 }
