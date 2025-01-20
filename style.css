@@ -259,7 +259,7 @@ body{
     justify-content: center;
     align-items: center;
     /* background-color: burlywood; */
-    margin-top: 5%;
+    margin-top:5%;
 }
 .pfp-1{
     height: max-content;
@@ -312,7 +312,7 @@ body{
     width: 40px;
     position: absolute;
     right: 80px;
-    /* top: 0; */
+    margin-top: 30px;
 }
 @media(max-width: 1200px){
     .pfp-2 img{
@@ -377,6 +377,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600; 
+    font-size: 28px; 
+    color:rgb(85, 85, 85) ;
 }
 .section-1{
     grid-row-start: 2;
@@ -435,4 +438,26 @@ body{
     display: flex;
     flex-direction: column;
     /* border: 1px solid blue; */
+}
+@media(max-width: 1200px){
+    .tech-container{
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0px;
+        /* background-color: red; */
+    }
+    .container-3{
+        /* background-color: blue; */
+        margin-top: 200px;
+        height: 140vh;
+    }
+    .tech{
+        margin-top: 5px;
+        background-color: #fff;
+        width: 80%;
+    }
+    .title{
+       font-size: 24px;
+       font-weight: 600;
+    }
 }
